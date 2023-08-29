@@ -12,8 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
+
+# Gapps
+WITH_GAPPS := true
+TARGET_INCLUDE_NGA := true
 
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
@@ -27,9 +31,10 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#maintainer
+COLT_BUILD_MAINTAINER := Amrutesh
 
-
-PRODUCT_NAME := bliss_rmx3371
+PRODUCT_NAME := colt_rmx3371
 PRODUCT_DEVICE := rmx3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
