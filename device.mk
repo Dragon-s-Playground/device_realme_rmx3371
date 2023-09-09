@@ -65,6 +65,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
+# Spark maintenier
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.spark.maintainer=Amrutesh
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/realme/sm8250-common/common.mk)
 
