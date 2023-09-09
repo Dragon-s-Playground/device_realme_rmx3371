@@ -12,41 +12,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common_full_phone.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Device config
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Rom Stuff
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+TARGET_FACEUNLOCK_SUPPORTED := true
+BUILD_WITH_GAPPS := true
+USE_QUICKPIC := true
+USE_MOTO_CALCULATOR := true
+USE_MOTO_CLOCK := true
+USE_DUCKDUCKGO := false
+TARGE_SUPPORTS_BLUR := true
+SUPERIOR_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# GAPPS
-WITH_GAPPS := true
-TARGET_INCLUDE_GOOGLE_APP := false
-TARGET_INCLUDE_GOOGLE_CALCULATOR := false
-TARGET_INCLUDE_GOOGLE_CALENDAR := false
-TARGET_INCLUDE_GOOGLE_CHROME := false
-TARGET_INCLUDE_GOOGLE_DESKCLOCK := false
-TARGET_INCLUDE_GOOGLE_DRIVE := false
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := true
-TARGET_INCLUDE_GOOGLE_SETUP := true
-TARGET_INCLUDE_PIXEL_FRAMEWORK := false
-
-# Debugging
-TARGET_INCLUDE_MATLOG := false
-TARGET_DEFAULT_ADB_ENABLED := true
-
-# Maintainer
-ALPHA_BUILD_TYPE := Official
-ALPHA_MAINTAINER := Amrutesh
-
-PRODUCT_NAME := lineage_rmx3371
+PRODUCT_NAME := superior_rmx3371
 PRODUCT_DEVICE := rmx3371
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
