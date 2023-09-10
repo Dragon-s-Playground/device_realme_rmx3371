@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/rmx3371/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/superior/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -26,9 +26,10 @@ USE_QUICKPIC := true
 USE_MOTO_CALCULATOR := true
 USE_MOTO_CLOCK := true
 USE_DUCKDUCKGO := false
-TARGE_SUPPORTS_BLUR := true
+TARGE_SUPPORTS_BLUR := false
 SUPERIOR_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 PRODUCT_NAME := superior_rmx3371
 PRODUCT_DEVICE := rmx3371
