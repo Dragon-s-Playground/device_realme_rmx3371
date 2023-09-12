@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk
 
+#camera
+$(call inherit-product, vendor/oplus/camera/opluscamera.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
