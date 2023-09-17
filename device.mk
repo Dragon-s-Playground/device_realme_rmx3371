@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk
 
 #camera
-$(call inherit-product, vendor/oplus/camera/opluscamera.mk)
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
