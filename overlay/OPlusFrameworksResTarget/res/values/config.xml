@@ -571,6 +571,12 @@
     <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
 
 
+    <!-- Whether device has SuperDart charging support -->
+    <bool name="config_hasSuperDartCharger">true</bool>
+
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
+
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
         <item>540</item>  <!-- <item>sensorLocationX</item> -->
