@@ -54,6 +54,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk
 
+#Gapps
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
